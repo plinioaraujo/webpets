@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Bem-vindo</h1>
+        <h2>Nossos pets precisam de um lar</h2>
+    </div>
+
+    <div class="filter-nav">
+        <a href="#" data-filter="all">Todos</a>
+        <a href="#" data-filter="cat">Gatos</a>
+        <a href="#" data-filter="dog">Cães</a>
+        <a href="#" data-filter="rabbit">Coelhos</a>
+    </div>
+
+    <div class="animals"></div>
+
+    <template id="animal-card-template">
+        <div class="animal-card">
+            <div class="animal-card-text">
+                <h3>Miau</h3>
+                <small><span class="age">3 anos</span> - <span class="species">Cat</span></small>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus a commodi dolor suscipit quo nulla voluptatem architecto, nemo libero totam dolorem quos quasi quod ipsam veritatis minima distinctio perspiciatis ex?</p>
+                <a href="#" class="primary-btn">Adote um miau</a>
+            </div>
+            <div class="animal-card-photo">
+                <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" alt="Animal">
+            </div>
+        </div>
+    </template>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
